@@ -71,9 +71,6 @@ a:hover, a, a:visited, a:link{
 
     font-family: "spotify", sans-serif;
     font-weight: bold;
+    font-size: 2vh;
 }
 
-body{
-    background-image: url("wyxina-tresse-GVgAzxl6jOw-unsplash.jpg");
-    background-size: 100%;
-}
