@@ -1,1 +1,68 @@
 @import url(josh-comeau-reset.css);
+
+/* thin */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-Thin.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-Thin.woff") format("woff");
+    font-weight: thin;
+    font-style: normal;
+}
+
+/* thin italic */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-ThinItalic.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-ThinItalic.woff") format("woff");
+    font-weight: thin;
+    font-style: italic;
+}
+
+/* regular */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-Regular.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* regular italic */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-RegularItalic.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* bold */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-Bold.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* bold italic */
+@font-face {
+    font-family: "spotify";
+    src: 
+    url("/fonts/SpotifyMix-BoldItalic.woff2") format("woff2"),
+    url("/fonts/SpotifyMix-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+:root{
+    font-family: "spotify", sans-serif;
+    font-weight: bold;
+}
