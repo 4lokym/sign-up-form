@@ -1,5 +1,13 @@
 @import url(josh-comeau-reset.css);
 
+
+:root{
+    --main-color: #1db954;
+
+    font-family: "spotify", sans-serif;
+    font-weight: bold;
+}
+
 /* thin */
 @font-face {
     font-family: "spotify";
@@ -62,7 +70,3 @@
 
 
 
-:root{
-    font-family: "spotify", sans-serif;
-    font-weight: bold;
-}
