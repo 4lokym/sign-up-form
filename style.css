@@ -1,11 +1,9 @@
 @import url(josh-comeau-reset.css);
 
+/* personal reset */
+a:hover, a, a:visited, a:link{
+    color: var(--main-color);
 
-:root{
-    --main-color: #1db954;
-
-    font-family: "spotify", sans-serif;
-    font-weight: bold;
 }
 
 /* thin */
@@ -68,5 +66,14 @@
     font-style: italic;
 }
 
+:root{
+    --main-color: #1db954;
 
+    font-family: "spotify", sans-serif;
+    font-weight: bold;
+}
 
+body{
+    background-image: url("wyxina-tresse-GVgAzxl6jOw-unsplash.jpg");
+    background-size: 100%;
+}
