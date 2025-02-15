@@ -68,9 +68,37 @@ a:hover, a, a:visited, a:link{
 
 :root{
     --main-color: #1db954;
+    --background-color: #121212;
+    --background-color-nearest: #212121; 
 
     font-family: "spotify", sans-serif;
     font-weight: bold;
     font-size: 2vh;
+
+    /* content proportions */
+    --inclination: 90deg;
+
+
 }
 
+body{
+    background-color: var(--background-color);
+}
+
+.all{
+    margin: 0 auto;
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.left-content{
+    width: 35%;
+    height: 100%;
+    background-image: linear-gradient(var(--inclination),var(--main-color), 20%, var(--background-color));
+    background-position: cover;
+}
+
+#logo{
+    width: 15%;
+}
