@@ -9,20 +9,18 @@ a:hover, a, a:visited, a:link{
 /* thin */
 @font-face {
     font-family: "spotify";
-    src: 
-    url("/fonts/SpotifyMix-Thin.woff2") format("woff2"),
-    url("/fonts/SpotifyMix-Thin.woff") format("woff");
-    font-weight: thin;
+    src: url("./fonts/SpotifyMix-Thin.woff2") format("woff2"),
+    url("./fonts/SpotifyMix-Thin.woff") format("woff");
+    font-weight: lighter;
     font-style: normal;
 }
 
 /* thin italic */
 @font-face {
     font-family: "spotify";
-    src: 
-    url("/fonts/SpotifyMix-ThinItalic.woff2") format("woff2"),
+    src: url("/fonts/SpotifyMix-ThinItalic.woff2") format("woff2"),
     url("/fonts/SpotifyMix-ThinItalic.woff") format("woff");
-    font-weight: thin;
+    font-weight: lighter;
     font-style: italic;
 }
 
@@ -39,8 +37,7 @@ a:hover, a, a:visited, a:link{
 /* regular italic */
 @font-face {
     font-family: "spotify";
-    src: 
-    url("/fonts/SpotifyMix-RegularItalic.woff2") format("woff2"),
+    src: url("/fonts/SpotifyMix-RegularItalic.woff2") format("woff2"),
     url("/fonts/SpotifyMix-RegularItalic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
@@ -49,8 +46,7 @@ a:hover, a, a:visited, a:link{
 /* bold */
 @font-face {
     font-family: "spotify";
-    src: 
-    url("/fonts/SpotifyMix-Bold.woff2") format("woff2"),
+    src: url("/fonts/SpotifyMix-Bold.woff2") format("woff2"),
     url("/fonts/SpotifyMix-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
@@ -59,8 +55,7 @@ a:hover, a, a:visited, a:link{
 /* bold italic */
 @font-face {
     font-family: "spotify";
-    src: 
-    url("/fonts/SpotifyMix-BoldItalic.woff2") format("woff2"),
+    src: url("/fonts/SpotifyMix-BoldItalic.woff2") format("woff2"),
     url("/fonts/SpotifyMix-BoldItalic.woff") format("woff");
     font-weight: bold;
     font-style: italic;
@@ -74,6 +69,7 @@ a:hover, a, a:visited, a:link{
     font-family: "spotify", sans-serif;
     font-weight: bold;
     font-size: 2vh;
+    color: white;
 
     /* content proportions */
     --inclination: 90deg;
@@ -87,7 +83,7 @@ body{
 
 .all{
     margin: 0 auto;
-    width: 70vw;
+    width: 75vw;
     height: 100vh;
     background-color: var(--background-color);
 }
@@ -97,6 +93,26 @@ body{
     height: 100%;
     background-image: linear-gradient(var(--inclination),var(--main-color), 20%, var(--background-color));
     background-position: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container{
+    margin-bottom: auto;
+    margin-top: 20vh;
+    background-color: 	rgba(18,18,18, 35%);
+
+    padding: 5% 15%;
+
+    display: flex;
+    align-items: center;
+    gap:5%;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+
+
 }
 
 #logo{
