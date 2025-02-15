@@ -1,6 +1,6 @@
 @import url(josh-comeau-reset.css);
 
-/* personal reset */
+/* personal link */
 a:hover, a, a:visited, a:link{
     color: var(--main-color);
 
@@ -30,7 +30,7 @@ a:hover, a, a:visited, a:link{
     src: 
     url("/fonts/SpotifyMix-Regular.woff2") format("woff2"),
     url("/fonts/SpotifyMix-Regular.woff") format("woff");
-    font-weight: normal;
+    font-weight: medium;
     font-style: normal;
 }
 
@@ -39,7 +39,7 @@ a:hover, a, a:visited, a:link{
     font-family: "spotify";
     src: url("/fonts/SpotifyMix-RegularItalic.woff2") format("woff2"),
     url("/fonts/SpotifyMix-RegularItalic.woff") format("woff");
-    font-weight: normal;
+    font-weight: medium;
     font-style: italic;
 }
 
@@ -86,24 +86,28 @@ body{
     width: 75vw;
     height: 100vh;
     background-color: var(--background-color);
+    display: flex;
 }
 
 .left-content{
-    width: 35%;
+    width: max(35%, 400px);
     height: 100%;
     background-image: linear-gradient(var(--inclination),var(--main-color), 20%, var(--background-color));
     background-position: cover;
+
+    flex-shrink: 0;
 
     display: flex;
     flex-direction: column;
 }
 
 .logo-container{
+    width: max();
     margin-bottom: auto;
     margin-top: 20vh;
     background-color: 	rgba(18,18,18, 35%);
 
-    padding: 5% 15%;
+    padding: 5% 12%;
 
     display: flex;
     align-items: center;
@@ -116,5 +120,31 @@ body{
 }
 
 #logo{
-    width: 15%;
+    width: 25%;
+
+}
+
+.rigth-content{
+    
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.title{
+    font-size: 3.5rem;
+}
+
+
+.log-in{
+    font-weight: lighter;
+}
+
+
+form{
+    
 }
