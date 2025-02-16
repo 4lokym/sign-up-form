@@ -120,7 +120,7 @@ body{
     gap: var(--padding-normal);
     
     font-size: var(--font-size-big);
-    font-weight: thin;
+    font-weight: bold;
 
 }
 
@@ -145,7 +145,7 @@ body{
 }
 
 .heading{
-    font-size: var(--font-size-big);
+    font-size: var(--font-size-big);    
 }
 
 form{
@@ -157,12 +157,13 @@ form{
     gap: var(--padding-large);
 
     align-items: flex-start;
-
+    
 }   
 
 .form-heading{
     font-size: var(--font-size-medium);
-    font-weight: bold
+    font-weight: bold;
+    text-shadow: var(--background-color-1) 3px 3px;
 }
 
 section{
@@ -179,7 +180,17 @@ input{
     margin: 0;
     padding: 0;
     width: 20ch;
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
+    border: 2px solid var(--background-color-3);
+    border-radius: 0.3rem;
+    color: inherit;
+    padding-left: 3px;
+    box-shadow: var(--background-color-1) 4px 4px;
 }
 
-
+button{
+    border-radius: 0.3rem;
+    border: 0;
+    background-color: var(--main-color);
+    box-shadow: 2px 2px 0px 2px var(--background-color-1) ;
+}
