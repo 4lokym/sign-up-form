@@ -63,13 +63,12 @@ a:hover, a, a:visited, a:link{
 
 :root{
     --main-color: #1db954;
-    --background-color: #121212;
-    --background-color-nearest: #212121; 
+    --background-color-1: #121212;
+    --background-color-2: #212121; 
+    --text-color: #b3b3b3;
 
     font-family: "spotify", sans-serif;
-    font-weight: bold;
-    font-size: 2vh;
-    color: white;
+    color: var(--text-color);
 
     /* content proportions */
     --inclination: 90deg;
@@ -78,93 +77,8 @@ a:hover, a, a:visited, a:link{
 }
 
 body{
-    background-color: var(--background-color);
-}
-
-.all{
-    margin: 0 auto;
-    width: 75vw;
-    height: 100vh;
-    background-color: var(--background-color);
-    display: flex;
-}
-
-.left-content{
-    width: max(35%, 400px);
-    height: 100%;
-    background-image: linear-gradient(var(--inclination),var(--main-color), 20%, var(--background-color));
-    background-position: cover;
-
-    flex-shrink: 0;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-container{
-    width: max();
-    margin-bottom: auto;
-    margin-top: 20vh;
-    background-color: 	rgba(18,18,18, 35%);
-
-    padding: 5% 12%;
-
-    display: flex;
-    align-items: center;
-    gap:5%;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 3rem;
-
-
-}
-
-#logo{
-    width: 25%;
-
-}
-
-.rigth-content{
-    
-    flex-shrink: 1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-weight: bold;
-    margin: 2rem;
-    gap: 2rem;
-}
-
-.title{
-    font-size: 2rem;
+    background-color: var(--background-color-1);
 }
 
 
-.log-in{
-    font-weight: lighter;
-}
 
-.form{
-    padding: 2rem;
-    background-color: var(--background-color-nearest);
-    border-radius: 1rem;
-}
-
-.form-title{
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-form{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-
-label{
-    display: flex;
-    flex-direction: column;
-}

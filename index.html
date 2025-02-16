@@ -4,59 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+    <link id="site-icon" rel="icon" href="favicon.ico">
     <script src="javascript.js" defer></script>
     <title>Musicfy</title>
 </head>
 <body>
 <div class="all">
     
-    <div class="left-content">
-        <div class="logo-container">
-            <img src="musicfyv2.png" alt="musicfy logo" id="logo">
-            <span id="logo-name">Musicfy</span>
+    <div class="left">
+        <div class="logo">
+            <img class="icon" src="musicfyv2.png">
+            <div class="icon-name">Musicfy</div>
         </div>
     </div>
-        
-    <div class="rigth-content">
 
-        <div class="title">This is <strong>not</strong> a real service,
-            <br> it's for educational <br>pourpuses</div>
-        <div class="form">
-            <div class="form-title">Random title</div>
-            
+    <div class="rigth">
+        <div class="heading">Subscribe and start listening your favorite artists</div>
+        <div class="form-container">
+            <div class="form-heading">Let's di this</div>
             <form action="#" method="post">
+
+                <section>
+                    <label for="first-name">First name</label><input id="first-name" type="text" required>
+                    <label for="last-name">Last name</label><input id="last-name" type="text" required>
+                    <label for="email">Email</label><input id="email" type="email" required>
+                    <label for="phone-num">Phone number</label><input id="phone-num" type="text" inputmode="numeric" required>
+                    <label for="password">Password</label><input id="password" type="password" required>
+                    <label for="confirm-pass">Confirm password</label><input id="confirm-pass" type="password" required>
+                </section>
+
+                <button type="submit">Create account</button>
                 
-                <label for="first-name">First name
-                <input type="text" id="first-name">
-                </label>
-
-                <label for="last-name">Last name
-                <input type="text" id="last-name">
-                </label>
-
-                <label for="email">Email
-                <input type="email" id="email">
-                </label>
-
-                <label for="phone-number">Phone number
-                <input type="tel" id="phone-number">
-                </label>
-
-                <label for="password">Password
-                <input type="password" id="password">
-                </label>
-
-                <label for="confirm-password">Confirm password
-                <input type="password" id="confirm-password">
-                </label>
 
             </form>
         </div>
-        <div class="log-in">
-            Already have an account? <a href="#">Log in</a>
-        </div>
-
+        <div class="log-in"></div>
     </div>
 
    
