@@ -95,8 +95,8 @@ body{
 }
 
 .all{
-    height: 100vh;
-    width: 70%;
+    width: max(70%, 70ch);
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -135,12 +135,12 @@ body{
     flex-shrink: 0;
     gap: var(--padding-large);
 
-    width: max(70%, 40ch);
+    width: max(60%, 40ch);
 
     align-items: baseline;
     justify-content: center;
     padding: var(--padding-large);
-    
+    overflow: hidden;
     background-color: var(--background-color-1);
 }
 
@@ -155,9 +155,7 @@ form{
     border-radius: 1rem;
     padding: var(--padding-large);
     gap: var(--padding-large);
-
     align-items: flex-start;
-    
 }   
 
 .form-heading{
@@ -169,6 +167,7 @@ form{
 section{
     flex-wrap: wrap;
     gap: var(--padding-large);
+
 
 }
 
@@ -193,4 +192,24 @@ button{
     border: 0;
     background-color: var(--main-color);
     box-shadow: 2px 2px 0px 2px var(--background-color-1) ;
+}
+
+@media only screen and (max-width: 800px){
+    .left{
+        display: none;
+    }
+    .rigth{
+        width: 90%;
+    }
+    .all{
+        justify-content: center;
+        width: 100vw;
+        min-width: 40ch;
+    }
+
+    body{
+        background: linear-gradient(45deg, var(--main-color), 10%, var(--background-color-1)) no-repeat,
+        black;
+
+    }
 }
