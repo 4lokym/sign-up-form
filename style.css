@@ -70,6 +70,7 @@ a:hover, a, a:visited, a:link{
     --padding-normal: 1rem;
     --padding-large: 2rem;
 
+    --font-size-medium: 1.5rem;
     --font-size-big: 2.5rem;
     --font-size-extra-big: 4rem;
 
@@ -92,11 +93,13 @@ body{
 
 .all{
     height: 100vh;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .left{
     flex-shrink: 0;
-    width: max(50%, 300px);
+    width: max(40%, 300px);
     background: linear-gradient(45deg, var(--main-color), 10%, var(--background-color-1));
 }
 
@@ -114,7 +117,7 @@ body{
     gap: var(--padding-normal);
     
     font-size: var(--font-size-big);
-    font-weight: bold;
+    font-weight: thin;
 
 }
 
@@ -122,4 +125,48 @@ body{
     width: 5rem;
     height: 5rem;
     
+}
+
+.rigth{
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: var(--padding-large);
+
+    width: max(60%, 40ch);
+
+    align-items: baseline;
+    justify-content: center;
+    padding: var(--padding-large);
+    
+    background-color: var(--background-color-1);
+}
+
+.heading{
+    font-size: var(--font-size-big);
+}
+
+form{
+    flex-direction: column;
+    width: fit-content;
+    background-color: var(--background-color-2);
+    border-radius: 1rem;
+    padding: var(--padding-large);
+
+    align-items: flex-start;
+    gap: var(--padding-large);
+}   
+
+.form-heading{
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-large);
+}
+
+.input-label{
+    flex-direction: column;
 }
