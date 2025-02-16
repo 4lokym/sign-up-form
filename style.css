@@ -65,6 +65,7 @@ a:hover, a, a:visited, a:link{
     --main-color: #1db954;
     --background-color-1: #121212;
     --background-color-2: #212121; 
+    --background-color-3:	#b3b3b3;
     --text-color: white;
 
     --padding-normal: 1rem;
@@ -73,6 +74,8 @@ a:hover, a, a:visited, a:link{
     --font-size-medium: 1.5rem;
     --font-size-big: 2.5rem;
     --font-size-extra-big: 4rem;
+
+    --input-width: max(17ch);
 
     font-family: "spotify", sans-serif;
     color: var(--text-color);
@@ -87,7 +90,7 @@ body{
     background-color: var(--background-color-1);
 }
 
-.all, .rigth, .left, .logo, form, .input-1, .input-label{
+.all, .rigth, .left, .logo, form, .input-1, .input-label, section{
     display: flex;
 }
 
@@ -132,7 +135,7 @@ body{
     flex-shrink: 0;
     gap: var(--padding-large);
 
-    width: max(60%, 40ch);
+    width: max(70%, 40ch);
 
     align-items: baseline;
     justify-content: center;
@@ -146,27 +149,37 @@ body{
 }
 
 form{
+    display: flex;
     flex-direction: column;
-    width: fit-content;
     background-color: var(--background-color-2);
     border-radius: 1rem;
     padding: var(--padding-large);
+    gap: var(--padding-large);
 
     align-items: flex-start;
-    gap: var(--padding-large);
+
 }   
 
 .form-heading{
     font-size: var(--font-size-medium);
-    font-weight: bold;
+    font-weight: bold
 }
 
 section{
-    display: flex;
     flex-wrap: wrap;
     gap: var(--padding-large);
+
 }
 
 .input-label{
     flex-direction: column;
 }
+
+input{
+    margin: 0;
+    padding: 0;
+    width: 20ch;
+    background-color: var(--background-color-1);
+}
+
+
