@@ -133,10 +133,12 @@ body{
     justify-content: center;
 
     font-weight: bold;
+    margin: 2rem;
+    gap: 2rem;
 }
 
 .title{
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 
@@ -144,7 +146,25 @@ body{
     font-weight: lighter;
 }
 
+.form{
+    padding: 2rem;
+    background-color: var(--background-color-nearest);
+    border-radius: 1rem;
+}
+
+.form-title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
 
 form{
-    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
 }
