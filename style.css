@@ -65,7 +65,13 @@ a:hover, a, a:visited, a:link{
     --main-color: #1db954;
     --background-color-1: #121212;
     --background-color-2: #212121; 
-    --text-color: #b3b3b3;
+    --text-color: white;
+
+    --padding-normal: 1rem;
+    --padding-large: 2rem;
+
+    --font-size-big: 2.5rem;
+    --font-size-extra-big: 4rem;
 
     font-family: "spotify", sans-serif;
     color: var(--text-color);
@@ -80,5 +86,40 @@ body{
     background-color: var(--background-color-1);
 }
 
+.all, .rigth, .left, .logo, form, .input-1, .input-label{
+    display: flex;
+}
+
+.all{
+    height: 100vh;
+}
+
+.left{
+    flex-shrink: 0;
+    width: max(50%, 300px);
+    background: linear-gradient(45deg, var(--main-color), 10%, var(--background-color-1));
+}
 
 
+
+.logo{
+    background-color: rgba(18,18,18, 30%);
+    width: 100%;
+    height: fit-content;
+
+    padding: var(--padding-normal);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: var(--padding-normal);
+    
+    font-size: var(--font-size-big);
+    font-weight: bold;
+
+}
+
+.icon{
+    width: 5rem;
+    height: 5rem;
+    
+}
