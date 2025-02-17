@@ -1,4 +1,4 @@
-@import url(josh-comeau-reset.css);
+ @import url(josh-comeau-reset.css);
 
 /* personal link */
 a:hover, a, a:visited, a:link{
@@ -87,7 +87,7 @@ input[type=number]{
     --font-size-big: 2.5rem;
     --font-size-extra-big: 4rem;
 
-    --input-width: max(17ch);
+    --input-width: 17ch;
 
     font-family: "spotify", sans-serif;
     color: var(--text-color);
@@ -118,12 +118,18 @@ span.required{
     color: var(--main-color);
 }
 
-/* @media only screen and (prefers-color-scheme: light){
-    :root{
+#swhitch-theme::after{
+    content: "light theme";    
+}
+
+ :root.light{
         --background-color-1: #e1ece3;
         --background-color-2: #457e59; 
         --background-color-3:	#b3b3b3;
         --text-color: #212121;
+
+    #swhitch-theme::after{
+        content: "dark theme";    
     }
 
     .left{  
@@ -144,7 +150,7 @@ span.required{
         color: white;
     }
 
-}   */
+}
 
 
 body{
@@ -227,8 +233,6 @@ form{
 section{
     flex-wrap: wrap;
     gap: var(--padding-large);
-
-
 }
 
 .input-label{
@@ -250,6 +254,7 @@ button{
     border: 0;
     background-color: var(--main-color);
 }
+
 
 /* add hover effect on button and focys effect on input*/
 
