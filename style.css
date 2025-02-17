@@ -98,11 +98,11 @@ input{
 }
 
 button{
-    box-shadow: 2px 2px 0px 2px var(--background-color-1) ;
+    box-shadow: 2px 2px 0px 0px var(--background-color-1) ;
 }
 
 
-@media screen and (prefers-color-scheme: light){
+@media only screen and (prefers-color-scheme: light){
     :root{
         --background-color-1: #e1ece3;
         --background-color-2: #457e59; 
@@ -117,13 +117,14 @@ button{
 
     input{
         box-shadow: var(--text-color) 4px 4px;
+        color: white;
     }
 
     button{
         box-shadow: 2px 2px 0px 2px var(--text-color) ;
     }
-
-}
+    
+} 
 
 
 body{
@@ -221,7 +222,6 @@ input{
     background-color: var(--background-color-2);
     border: 2px solid var(--background-color-3);
     border-radius: 0.3rem;
-    color: inherit;
     padding-left: 3px;
 }
 
@@ -229,6 +229,19 @@ button{
     border-radius: 0.3rem;
     border: 0;
     background-color: var(--main-color);
+}
+
+/* add hover effect on button and focys effect on input*/
+
+button:hover, input:focus{
+    position:relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: 1px 1px 0px;
+
+}
+input:focus{
+    outline: none;
 }
 
 /* adds responsivness to devices */
