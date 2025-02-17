@@ -107,7 +107,7 @@ input[type=number]{
 
 input{
     box-shadow: var(--background-color-1) 4px 4px;
-    color: inherit;
+    color: white;
 }
 
 button{
@@ -118,7 +118,7 @@ span.required{
     color: var(--main-color);
 }
 
-@media only screen and (prefers-color-scheme: light){
+/* @media only screen and (prefers-color-scheme: light){
     :root{
         --background-color-1: #e1ece3;
         --background-color-2: #457e59; 
@@ -144,7 +144,7 @@ span.required{
         color: white;
     }
 
-}  
+}   */
 
 
 body{
@@ -267,8 +267,6 @@ input:focus{
 /* add invalid effect on input */
 
 input:user-invalid{
-
-    border: none;
     border: solid orange 2px;    
 }
 
